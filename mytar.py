@@ -36,9 +36,9 @@ elif sys.argv[1] == 'x':
     os.write(file_2, fd_zip_bytes.split(b'\nthis is the break between files. \n\n')[1])
 
 
-    os.close(sys.argv[2])
-    os.close('file_1')
-    os.close('file_2')
+    os.close(fd_zip)
+    os.close(file_1)
+    os.close(file_2)
 
 
 
